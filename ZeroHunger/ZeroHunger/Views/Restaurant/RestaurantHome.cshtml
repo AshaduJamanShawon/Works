@@ -1,0 +1,29 @@
+﻿@{
+
+    Layout = "../Shared/_Layout3.cshtml";
+}
+
+@{
+    ViewBag.Title = "RestaurantHome";
+}
+<br /><h2 class="text-center">  Restaurant Home</h2><br />
+  
+<h3 class="text-center"> Welcome @Session["UserName"].ToString()</h3><br />
+
+<div class="text-center">
+<a href="/Restaurant/food/@Session["UserID"].ToString()" class="btn btn-warning text-center ">Request</a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

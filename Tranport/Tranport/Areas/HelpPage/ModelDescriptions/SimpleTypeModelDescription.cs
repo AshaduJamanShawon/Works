@@ -1,0 +1,6 @@
+namespace Tranport.Areas.HelpPage.ModelDescriptions
+{
+    public class SimpleTypeModelDescription : ModelDescription
+    {
+    }
+}

@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "DynamicLogin";
+}
+    <h2 class="text-center">Log in</h2>
+
+    <form action="" method="post" >
+        <div class="container" style="width:400px;" >
+
+        <label>Email</label>
+        <input type="text" name="Email" class="form-control " placeholder="Enter your Email" value="@(Model == null ? "" :Model.Email)" />@Html.ValidationMessage("Email")<br />
+
+        <label>Password</label>
+        <input type="password" name="Password" class="form-control " placeholder="Enter Password" /> <br />
+
+        <input type="submit" class="btn btn-success" name="btn_submit" value="Login" />
+        </div>
+    </form>
+

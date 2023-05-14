@@ -1,0 +1,62 @@
+﻿@{
+
+    Layout = "../Shared/_Layout2.cshtml";
+}
+
+@{
+    ViewBag.Title = "Request";
+}
+
+<br />
+<h2>Request Details</h2>
+<br />
+<table class="table table-bordered">
+
+
+
+    <tr>
+
+        <th>Serial</th>
+        <th>Restaurant Id</th>
+        <th>Restaurant Name</th>
+        <th>Restaurant Address</th>
+        <th>Restaurant Email</th>
+        <th>Restaurant Phone Number</th>
+        <th>Food Quantity</th>
+
+    </tr>
+
+    @foreach (var st in Model)
+    {
+
+
+        Session["rqid"] = @st.RQID;
+
+        Session["name"] = @st.Name;
+
+        Session["address"] = @st.Address;
+
+        Session["email"] = @st.Email;
+
+        Session["phonenumber"] = @st.PhoneNumber;
+        Session["quantity"] = @st.Quantity;
+
+        <tr>
+
+            <td> @st.Id</td>
+            <td>@st.RQID</td>
+            <td>@st.Name</td>
+
+            <td>@st.Address</td>
+            <td>@st.Email</td>
+            <td>@st.PhoneNumber</td>
+
+            <td>@st.Quantity</td>
+
+            <td><a href="/Admin/Requestdelete/@st.Id" class="btn btn-info">Accept</a></td>
+
+
+        </tr>
+    }
+
+</table>

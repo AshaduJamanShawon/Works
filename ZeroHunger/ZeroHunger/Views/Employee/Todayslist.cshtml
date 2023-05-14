@@ -1,0 +1,43 @@
+﻿
+@{
+    ViewBag.Title = "Todayslist";
+}
+
+<h2>Todays list</h2>
+
+
+<table class="table table-bordered">
+
+
+
+    <tr>
+
+        <th>Restaurant Id</th>
+        <th>Restaurant Name</th>
+        <th>Restaurant Address</th>
+        <th>Restaurant Email</th>
+        <th>Restaurant Phone Number</th>
+        <th>Food Quantity</th>
+
+    </tr>
+
+    @foreach (var st in Model)
+    {
+
+
+        <tr>
+          
+            <td>@st.ReastaurantId</td>
+            <td>@st.ReastaurantName</td>
+            <td>@st.ReastaurantAddress</td>
+            <td>@st.ReastaurantEmail</td>
+            <td>@st.ReastaurantPhone</td>
+            <td>@st.FoodQuantity</td>
+
+
+
+        </tr>
+    }
+
+</table>
+

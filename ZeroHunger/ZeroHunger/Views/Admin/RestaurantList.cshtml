@@ -1,0 +1,31 @@
+﻿@{
+
+    Layout = "../Shared/_Layout2.cshtml";
+}
+
+@{
+    ViewBag.Title = "RestaurantList";
+}
+<br />
+<h2>Restaurant List</h2>
+
+<br />
+
+<table class="table table-bordered">
+    @foreach (var st in Model)
+    {
+        <tr>
+            <td>@st.Id</td>
+            <td>@st.Name</td>
+
+            <td>@st.Address</td>
+            <td>@st.Email</td>
+            <td>@st.PhoneNumber</td>
+
+            <td><a href="/Admin/RestaurantEdit/@st.Id" class="btn btn-info">Edit</a></td>
+            <td><a href="/Admin/RestaurantDelete/@st.Id" class="btn btn-danger">Delete</a></td>
+        </tr>
+    }
+
+</table>
+

@@ -1,0 +1,27 @@
+﻿@{
+
+    Layout = "../Shared/_Layout2.cshtml";
+}
+
+
+@{
+    ViewBag.Title = "Accept";
+}
+
+<h2>Accept</h2>
+
+<table class="table table-bordered">
+    @foreach (var st in Model)
+    {
+        <tr>
+            <td>@st.Id</td>
+            <td>@st.Name</td>
+            <td>@st.Phone</td>
+            <td><a href="/Admin/Assign/@st.Id" class="btn btn-info">Assign</a></td>
+
+
+
+        </tr>
+    }
+
+</table>

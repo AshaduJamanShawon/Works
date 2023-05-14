@@ -1,0 +1,17 @@
+C:\Users\shawo\source\repos\Tranport\DAL\bin\Debug\DAL.dll.config
+C:\Users\shawo\source\repos\Tranport\DAL\bin\Debug\DAL.dll
+C:\Users\shawo\source\repos\Tranport\DAL\bin\Debug\DAL.pdb
+C:\Users\shawo\source\repos\Tranport\DAL\bin\Debug\EntityFramework.dll
+C:\Users\shawo\source\repos\Tranport\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\shawo\source\repos\Tranport\DAL\bin\Debug\EntityFramework.xml
+C:\Users\shawo\source\repos\Tranport\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\shawo\source\repos\Tranport\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\shawo\source\repos\Tranport\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\shawo\source\repos\Tranport\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\shawo\source\repos\Tranport\DAL\obj\Debug\DAL.dll
+C:\Users\shawo\source\repos\Tranport\DAL\obj\Debug\DAL.pdb
+C:\Users\shawo\source\repos\Tranport\DAL\obj\Debug\DAL.Migrations.BusDetailsBusOwnerTAblesAddes.resources
+C:\Users\shawo\source\repos\Tranport\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
+C:\Users\shawo\source\repos\Tranport\DAL\obj\Debug\DAL.Migrations.FKBusOwnerBusDetails.resources
+C:\Users\shawo\source\repos\Tranport\DAL\obj\Debug\DAL.Migrations.EmployessDriverTAblesAddes.resources
+C:\Users\shawo\source\repos\Tranport\DAL\obj\Debug\DAL.Migrations.AdminTicketCounterUserTableAdd1.resources

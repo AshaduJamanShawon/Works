@@ -1,0 +1,58 @@
+﻿@{
+
+    Layout = "../Shared/_Layout2.cshtml";
+}
+
+
+@{
+    ViewBag.Title = "EmployeeAssignList";
+}
+<br />
+<h2>Employee Assign List</h2>
+
+<br />
+<table class="table table-bordered">
+
+
+   
+    <tr>
+
+        <th>Serial</th>
+        <th>Employee Id</th>
+        <th>Employee Name</th>
+        <th>Employee Address</th>
+
+        <th>Restaurant Id</th>
+        <th>Restaurant Name</th>
+        <th>Restaurant Address</th>
+        <th>Restaurant Email</th>
+        <th>Restaurant Phone Number</th>
+        <th>Food Quantity</th>
+
+    </tr>
+
+    @foreach (var st in Model)
+    {
+
+
+        <tr>
+            <td>@st.Id</td>
+            <td>@st.EmployeeId</td>
+
+            <td>@st.EmployeeName</td>
+
+            <td>@st.EmployeePhone</td>
+
+            <td>@st.ReastaurantId</td>
+            <td>@st.ReastaurantName</td>
+            <td>@st.ReastaurantAddress</td>
+            <td>@st.ReastaurantEmail</td>
+            <td>@st.ReastaurantPhone</td>
+            <td>@st.FoodQuantity</td>
+
+
+
+        </tr>
+    }
+
+</table>

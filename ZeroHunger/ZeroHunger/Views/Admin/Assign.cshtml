@@ -1,0 +1,116 @@
+﻿@{
+
+    Layout = "../Shared/_Layout2.cshtml";
+}
+
+@{
+    ViewBag.Title = "Assign";
+}
+
+<h2>Assign</h2>
+
+
+@foreach (var st in Model)
+{
+
+    Session["Id"] = @st.Id;
+
+    Session["Name"] = @st.Name;
+
+    Session["Phone"] = @st.Phone;
+
+
+
+    <form action="/Admin/AssignAdd" method="post">
+
+        <label>Employee ID</label>
+        <input type="number" name="EmployeeId" class="form-control" placeholder="Enter your Id" value="@Session["Id"].ToString()" /><br />
+
+
+        <label>Employee Name</label>
+        <input type="text" name="EmployeeName" class="form-control" placeholder="Enter your Name,only letter" value="@Session["Name"].ToString()" /><br />
+
+
+
+        <label>Employee Phone</label>
+        <input type="Number" name="EmployeePhone" class="form-control" placeholder="Enter your Phone number" value="@Session["Phone"].ToString()" />
+
+
+
+
+        <label>Restaurant ID</label>
+        <input type="number" name="ReastaurantId" class="form-control" placeholder="Enter your Id" value="@Session["rqid"].ToString()" /><br />
+
+
+        <label>Restaurant Name</label>
+        <input type="text" name="ReastaurantName" class="form-control" placeholder="Enter your Name,only letter" value="@Session["name"].ToString()" /><br />
+
+
+
+        <label>Restaurant Address</label>
+        <input type="text" name="ReastaurantAddress" class="form-control" placeholder="Enter your Address" value="@Session["address"].ToString()" /><br />
+
+        <label>Restaurant E-mail</label>
+        <input type="text" name="ReastaurantEmail" class="form-control" placeholder="Enter your Email" value="@Session["email"].ToString()" /> <br />
+
+
+        <label> Restaurant Phone Number</label>
+        <input type="Number" name="ReastaurantPhone" class="form-control" placeholder="Enter your Phone number" value="@Session["phonenumber"].ToString()" /><br />
+
+
+        <label>Food Quantity</label>
+        <input type="text" name="FoodQuantity" class="form-control" placeholder="Enter Quantity" value="@Session["quantity"].ToString()" /><br />
+
+
+
+
+        <input type="submit" class="btn btn-success" name="btn_submit" value="Assign" />
+
+    </form>
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

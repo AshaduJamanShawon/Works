@@ -1,0 +1,38 @@
+﻿
+
+@{
+    ViewBag.Title = "RestaurantReg";
+}
+
+<h2 class="text-center"  >Restaurant Registration</h2>
+
+<form action="" method="POST">
+
+    <div class="container" style="width:400px;">
+
+        <label>Restaurant Name</label>
+        <input type="text" name="Name" class="form-control" placeholder="Enter your Name,only letter" value="@(Model == null ? "" :Model.Name)" />@Html.ValidationMessage("Name")<br />
+
+        <label>Address</label>
+        <input type="text" name="Address" class="form-control" placeholder="Enter your Address" value="@(Model == null ? "" :Model.Address)" />@Html.ValidationMessage("Address")<br />
+
+        <label>E-mail</label>
+        <input type="text" name="Email" class="form-control" placeholder="Enter your Email" value="@(Model == null ? "" :Model.Email)" />@Html.ValidationMessage("Email")<br />
+
+        <label>Phone Number</label>
+        <input type="Number" name="PhoneNumber" class="form-control" placeholder="Enter your Phone number" value="@(Model == null ? "" :Model.PhoneNumber)" />@Html.ValidationMessage("PhoneNumber")
+
+        <label>Password</label>
+        <input type="password" name="Pw1" class="form-control" placeholder="Must be 8 digit" />@Html.ValidationMessage("Pw1")<br />
+
+        <label>Confirm Password</label>
+        <input type="password" name="Pw2" class="form-control" placeholder="Enter same Password" />@Html.ValidationMessage("Pw2")<br />
+
+        <input type="Submit" name="name" value="Sign Up" class="btn btn-info" /><br />
+
+    </div>
+
+</form>
+
+
+
